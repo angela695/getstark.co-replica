@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign-in page</title>
+    <link rel="stylesheet" href="/sign-in.css" />
+  </head>
+  <body>
+    <div class="form">
+      <img
+        src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_dcaaa08d9d11b4f4f3f0a64bc1957295/stark-stark.png"
+        alt="main-icon"
+      />
+      <p>Create a free Stark account or sign in with your credentials.</p>
+      <hr />
+      <button id = "google" class="button">Continue with Google</button>
+      <button id = "SSO" class="button">Continue with SSO</button>
+      <hr />
+      <form action="/" method="POST">
+        <label for="email">Business Email </label>
+        <input
+          type="text"
+          placeholder="Enter your work email"
+          name="email"
+          id="email"
+        />
+        <button class="button continue">Continue</button>
+      </form>
+    </div>
+  </body>
+</html>

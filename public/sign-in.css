@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: ArminGrotesk, ArminGroteskBlack, ArminGroteskSemiBold, sans-serif;
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.button {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  align-self: center;
+  width: 100%;
+}
+
+#google {
+  border: 2px solid black;
+}
+#google:hover {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.347);
+}
+
+#SSO {
+  background-color: #381fd1;
+  color: white;
+}
+
+#SSO:hover {
+  opacity: 0.7;
+  transition: 0.1s ease-in-out 0.1s;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  top: 100px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 32px 48px;
+  width: 500px;
+  height: fit-content;
+  border: 2px solid black;
+}
+.form img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.form > p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.form hr {
+  margin: 0;
+}
+
+.form > form {
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > form > .button {
+  margin-top: 10px;
+}
+
+.form > form > #email {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.form > form > label {
+  font-size: 0.9rem;
+  color: rgb(99, 99, 99);
+}
+
+.form > form > .continue {
+  border: 1px solid black;
+}
+.form > form > .continue:hover {
+  background-color: rgb(77, 76, 76);
+  color: white;
+  transition: 0.1s ease-in-out 0.1s;
+}

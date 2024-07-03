@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ArminGrotesk, ArminGroteskBlack, ArminGroteskSemiBold, sans-serif;
+  box-sizing: border-box;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.content-button {
+  font-size: 15px;
+  width: fit-content;
+  background-color: #381fd1;
+  padding: 13px 25px;
+  margin-top: 50px;
+  color: white;
+}
+.color {
+  color: #10284b;
+}
+
+.spacing {
+  letter-spacing: 1px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.white-font {
+  color: white;
+}
+
+.content-color-blue {
+  color: #0b2b5c;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+.heading {
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+body {
+  background: #f8f6e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*hero page*/
+.hero-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-page > img {
+  width: 100%;
+  height: 100vh;
+}
+
+/*setting navbar*/
+nav {
+  padding: 1rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  justify-content: space-between;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+}
+
+nav .nav-ops {
+  align-items: center;
+  column-gap: 1rem;
+  display: flex;
+}
+
+nav .log-in-free-trial {
+  column-gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-ops img {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 2.3rem;
+}
+
+.hero-page nav > .log-in-free-trial > a > button {
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background-color: white;
+  color: rgb(64, 7, 233);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*setting the the hero-content*/
+
+.hero-page > .hero-content {
+  row-gap: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.hero-page > .hero-content > h1 {
+  font-size: 110px;
+  height: 290px;
+}
+
+.hero-content > a > .button {
+  font-size: 1.1rem;
+  padding: 15px 25px;
+  background-color: sandybrown;
+}
+
+.hero-content > .button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/*image 2 part*/
+
+body > .image2 {
+  position: relative;
+  bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > .image2 > img {
+  width: 80%;
+}
+
+body > .image2 > .content2 > .heading {
+  font-size: 3rem;
+}
+
+body > .image2 > .content2 > .paragraph {
+  padding: 0;
+  margin: 0;
+}
+
+.content2 {
+  margin-top: 50px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+/*scroll animation*/
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.scroll-animation {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  top: -50px;
+  z-index: 0;
+}
+
+.icons-scroll {
+  position: relative;
+  animation: 45s slide infinite linear;
+  display: inline-block;
+}
+
+.icons-scroll img {
+  border-radius: 50%;
+  object-fit: contain;
+  margin: 0 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.scroll-animation:hover .icons-scroll {
+  animation-play-state: paused;
+}
+
+.scroll-animation:before,
+.scroll-animation:after {
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  content: "";
+  top: 0;
+  z-index: 2;
+}
+
+.scroll-animation:before {
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+.scroll-animation:after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+/* content 3 */
+.content3 {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content3 > .cards-container {
+  display: flex;
+  column-gap: 40px;
+}
+
+.content3 > div > div {
+  color: #381fd1;
+  height: max-content;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.content3 span {
+  font-size: 2.7em;
+  font-weight: 800;
+}
+
+.content3 > div > div > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.content3 > div > div > h5 {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.content3 > .cards-container > div > .small {
+  font-size: 0.85em;
+}
+
+/*image 3 of content 4*/
+
+.image3 {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.image3 > .content2 {
+  align-items: center;
+}
+.image3 > .content2 button {
+  width: fit-content;
+}
+
+.image3 > .content2 > h1 {
+  font-size: 3rem;
+}
+.image3 > img {
+  width: 100%;
+}
+
+/*last iamge 3 */
+
+body > .last-content > .images {
+  height: 200px;
+}
+
+.last-content > .images > img {
+  height: 100%;
+}
+
+.last-content > .content2 {
+  margin: 20px;
+}
+
+/*last-box*/
+
+.last-box {
+  width: 50%;
+  padding: 25px 20px;
+  margin-bottom: 200px;
+  border: 3px solid #381fd1;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  height: fit-content;
+  color: #381fd1;
+  border-radius: 10px;
+  background-color: #c79be845;
+}
+
+.last-box > img {
+  height: 80px;
+  border-radius: 50%;
+}
+
+/*green content*/
+.green-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.green-content {
+  border-radius: 50px ;
+  background-color: #99d6cc;
+  width: 70%;
+  padding : 4rem;
+}
+
+.green-content>p,h1 {
+  text-align: center;
+  margin-bottom : 40px ;
+}
+
+.green-content>p {
+  color: #381fd1;
+  font-weight: 600;
+}
+
+.green-content>h1 {
+  font-size: 2.7em;
+}
+
+.green-data {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 50px; 
+  column-gap : 70px ;
+}
+
+
+.green-box {
+  line-height: 2rem;
+}
+
+.green-box > h2 {
+  color: #381fd1;
+}
+
+.green-box>img {
+  height : 100px ;
+}
+
+
+
+
