@@ -356,11 +356,13 @@ body > .last-content > .images {
 }
 
 /*green content*/
+
 .green-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 100px ;
 }
 
 .green-content {
@@ -370,7 +372,7 @@ body > .last-content > .images {
   padding : 4rem;
 }
 
-.green-content>p,h1 {
+.green-content>p {
   text-align: center;
   margin-bottom : 40px ;
 }
@@ -382,6 +384,9 @@ body > .last-content > .images {
 
 .green-content>h1 {
   font-size: 2.7em;
+  text-align: center;
+  margin-bottom : 40px ;
+
 }
 
 .green-data {
@@ -404,6 +409,44 @@ body > .last-content > .images {
   height : 100px ;
 }
 
+/*purple background image*/
+
+.purple-background img{
+  position : absolute ;
+  right : 0px ;
+}
+
+/*purple container*/
+
+.purple-container {
+  opacity : 1 ;
+  background-color: rgba(250 ,245, 255 , 1 );;
+  border: 2px solid black;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end; */
+}
+
+.purple-content {
+  padding : 4rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.purple-content>p {
+  color: #381fd1;
+  font-weight: 600;
+}
+
+.purple-content>h1 {
+  font-size : 3rem ;
+}
+
+.purple-cards .card{
+  height : fit-content ;
+  border: 1px solid black;
+}
 
 
 
