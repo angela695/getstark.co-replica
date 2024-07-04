@@ -414,14 +414,37 @@ body > .last-content > .images {
 .purple-background img{
   position : absolute ;
   right : 0px ;
+  z-index: 0;
+}
+
+
+.purple-hero-box {
+  display: flex;
+  justify-content: space-between;
+  margin : 0 
+  width : 100%;
+}
+          /*purple images*/
+
+.purple-images>img {
+  position: absolute;
+  width : 60% ;
+  left : 0;
+  z-index : 2;
+  left : -500px ;
 }
 
 /*purple container*/
 
 .purple-container {
+  right  : 0px;
+  width : 60% ;
+  height : fit-content ;
+  position : absolute ;
+  z-index: 1;
   opacity : 1 ;
-  background-color: rgba(250 ,245, 255 , 1 );;
-  border: 2px solid black;
+  background-color: rgb(250 ,245, 255 );
+  border-radius: 50px ;
   /* display: flex;
   flex-direction: column;
   align-items: flex-end; */
@@ -433,6 +456,10 @@ body > .last-content > .images {
   flex-direction: column;
   justify-content: flex-end;
 }
+.purple-content {
+  display: grid; 
+  grid-template-columns: 80%  ;
+}
 
 .purple-content>p {
   color: #381fd1;
@@ -443,10 +470,33 @@ body > .last-content > .images {
   font-size : 3rem ;
 }
 
-.purple-cards .card{
+.purple-cards .card{  
+  border-radius: 30px ;
+  padding : 20px ;
+  width : fit-content;
   height : fit-content ;
-  border: 1px solid black;
 }
+
+.purple-cards .card:hover{ 
+   background-color : rgb(235, 220, 249) ; 
+   text-decoration: solid;
+}
+  .card>a {
+  text-decoration: none ;
+}
+
+.card>a>div>h2 {
+  color :#381fd1 ;
+  font-weight: 700;
+}
+
+.card>a>div>p {
+  letter-spacing: 0.09rem;
+  color :#381fd1 ;
+  line-height : 1.5rem;
+  color : rgb(84, 83, 83) ;
+}
+
 
 
 
